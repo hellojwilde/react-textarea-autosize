@@ -19,7 +19,7 @@ var TextareaAutosize = React.createClass({
   },
 
   componentWillReceiveProps: function(nextProps) {
-    this.dirty = !!nextProps.style;
+    this.dirty = !!nextProps.style || !!nextProps.value;
   },
 
   componentDidUpdate: function() {
